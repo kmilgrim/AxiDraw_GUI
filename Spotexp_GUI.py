@@ -295,7 +295,7 @@ class Ui_SpottingExp(QMainWindow):
             msg.setText("Please connect the AxiDraw.")
             msg.setStandardButtons(QMessageBox.Ok)
             x = msg.exec_()
-        elif
+
             penPosUp = int(self.spinBox_7.text())
             penPosDown = int(self.spinBox_8.text())
             print(penPosUp)
@@ -344,7 +344,7 @@ class Ui_SpottingExp(QMainWindow):
         # makeRow in a loop (rn it's just called 2 times so it isn't looped).
         # To only test 1 or 2 pen delay values, change the range in the for
         # loop below.
-        for i in range(3)
+        for i in range(3):
             self.ad.options.pen_delay_down = penDelayDown_1
             self.ad.options.pen_delay_up = penDelayUp_1
 
@@ -362,7 +362,7 @@ class Ui_SpottingExp(QMainWindow):
             msg.setText("Please connect the AxiDraw.")
             msg.setStandardButtons(QMessageBox.Ok)
             x = msg.exec_()
-        else
+        else:
             for i in range(2):
                 self.ad.pendown()
                 self.ad.go(2.5, 0)
@@ -380,7 +380,7 @@ class Ui_SpottingExp(QMainWindow):
             msg.setText("Please connect the AxiDraw.")
             msg.setStandardButtons(QMessageBox.Ok)
             x = msg.exec_()
-        elif
+        else:
             self.window = QtWidgets.QMainWindow()
             self.ui = Ui_ModifyWindow()
             self.ui.setupUi(self.window)
