@@ -1,4 +1,4 @@
-# Spotting_Exp
+# AxiDraw_GUI
 
 This GUI was made to make spotting experiments with the AxiDraw much more user friendly. The user can indicate pen delay values and the AxiDraw will make two rows per pen delay value. 
 
